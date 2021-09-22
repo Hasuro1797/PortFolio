@@ -6,7 +6,7 @@ import spain from '../assets/images/spain.png'
 import en from '../assets/images/united-kingdom.png';
 import { FormattedMessage } from 'react-intl';
 import { langContext } from '../helpers/Provider';
-const Navigator = () => {
+const Navigator = ({setShowMenu}) => {
     const { setLanguage } = useContext(langContext)
     return (
         <div className="navigator">
@@ -16,7 +16,12 @@ const Navigator = () => {
                 </div>  
                 <ul className="nav-items">
                     <li className="nav-item">
-                        <NavLink to={routes.home} exact activeClassName="active">
+                        <NavLink 
+                            to={routes.home} exact 
+                            activeClassName="active"
+                            role="button"
+                            onClick={ () => setShowMenu(false) }
+                            >
                             <FormattedMessage
                                 id={"navigator.home"}
                                 defaultMessage="Home"
@@ -24,7 +29,12 @@ const Navigator = () => {
                         </NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to={routes.about} exact activeClassName="active">
+                        <NavLink 
+                            to={routes.about} exact 
+                            activeClassName="active"
+                            role="button"
+                            onClick={ () => setShowMenu(false) }
+                            >
                             <FormattedMessage
                                 id="navigator.about"
                                 defaultMessage="About"
@@ -32,7 +42,12 @@ const Navigator = () => {
                         </NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to={routes.projects} exact activeClassName="active">
+                        <NavLink 
+                            to={routes.projects} exact 
+                            activeClassName="active"
+                            role="button"
+                            onClick={ () => setShowMenu(false) }
+                            >
                             <FormattedMessage
                                 id="navigator.projects"
                                 defaultMessage="Projects"
@@ -40,7 +55,12 @@ const Navigator = () => {
                         </NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to={routes.contact} exact activeClassName="active">
+                        <NavLink 
+                            to={routes.contact} exact 
+                            activeClassName="active"
+                            role="button"
+                            onClick={ () => setShowMenu(false) }
+                            >
                         <FormattedMessage
                                 id="navigator.contact"
                                 defaultMessage="Contact"

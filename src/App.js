@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <div className={`sidebar ${showMenu ? "nav-toogle": "" }`}>
-        <Navigator/>
+        <Navigator setShowMenu={setShowMenu}/>
       </div>
       <div 
         className="nav-btn"
