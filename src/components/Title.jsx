@@ -1,12 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
-const Title = ({ title,span }) => {
+const Title = ({ id, text  }) => {
     return (
         <div className="Title">
             <h3>
-                {title}
+                <FormattedMessage
+                    id={id}
+                    defaultMessage={text}
+                />
                 <span>
-                    {span}
+                    <FormattedMessage
+                        id={id}
+                        defaultMessage={text}
+                    />
                 </span>
             </h3>
         </div>

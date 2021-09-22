@@ -1,0 +1,23 @@
+{
+    "navigator.home": "Home",
+    "navigator.about": "About",
+    "navigator.projects": "Projects",
+    "navigator.contact": "Contact",
+    "title.about": "About Me",
+    "title.skills": "Skills",
+    "title.services": "Services",
+    "title.contact": "Contact Me",
+    "Home.greeting": "Hi There. I'm",
+    "Home.profession": "Developer ",
+    "About.start": "I'm ",
+    "About.introduction": "I love video games and technology. I am currently focused on full stack web development. I am studying Computer Engineering and I would love to learn new technologies to exploit them. This year I got a Full Stack Developer Certification. I would love to share my skills with you and I hope you enjoy this visit to my profile. Welcome !!!",
+    "services.web.design.title": "Web Design",
+    "services.web.design.description": "Ui / ux design for the website with a unique look.",
+    "services.web.developer.title": "Web development",
+    "services.web.developer.description": "Full Stack development with good performance and functionality.",
+    "services.database.title": "Data Base",
+    "services.database.description": "Development with the back-end part and the database efficiently.",
+    "contact.phone": "Phone",
+    "contact.email": "Email",
+    "contact.location": "Location"
+}

@@ -1,6 +1,7 @@
 import React from 'react'
+import { FormattedMessage } from 'react-intl'
 
-const ServiceSection = ({ Icon, title, text }) => {
+const ServiceSection = ({ Icon, idTitle, textTitle, idDescription, textDescription}) => {
     return (
         <div className="ServiceSection">
             <div className="service">
@@ -9,10 +10,16 @@ const ServiceSection = ({ Icon, title, text }) => {
                         {Icon}
                     </div>
                     <h5 className="s-title">
-                        {title}
+                        <FormattedMessage
+                            id={idTitle}
+                            defaultMessage={textTitle}
+                        />
                     </h5>
                     <p className="s-text">
-                        {text}
+                        <FormattedMessage
+                            id={idDescription}
+                            defaultMessage={textDescription}
+                        />
                     </p>
                 </div>
             </div>

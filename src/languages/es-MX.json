@@ -1,0 +1,23 @@
+{
+    "navigator.home": "Inicio",
+    "navigator.about": "Sobre mi",
+    "navigator.projects": "Proyectos",
+    "navigator.contact": "Contacto",
+    "title.about": "Sobre mi",
+    "title.skills": "Habilidades",
+    "title.services": "Servicios",
+    "title.contact": "Contactame",
+    "Home.greeting": "Hola. Yo soy",
+    "Home.profession": "Desarrollador ",
+    "About.start": "Soy ",
+    "About.introduction": "Amo los videojuegos y la tecnología. Actualmente estoy enfocado en el desarrollo web full stack. Estoy estudiando la carrera de Ingeniería Informática y me encantaría aprender nuevas tecnologías para explotarlas. Este año obtuve una certificación de desarrollador Full Stack. Me encantaria compartir contigo mis habilidades y espero que disfrutes esta visita a mi perfil. Bienvenido !!!",
+    "services.web.design.title": "Diseño Web",
+    "services.web.design.description": "Diseño de ui / ux para el sitio web con un aspecto único.",
+    "services.web.developer.title": "Desarrollo Web",
+    "services.web.developer.description": "Desarrollo Full Stack con buen rendimiento y funcionalidad.",
+    "services.database.title": "Base de Datos",
+    "services.database.description": "Desarrollo con la parte de back-end y la base de datos eficientemente.",
+    "contact.phone": "Teléfono",
+    "contact.email": "Correo Electrónico",
+    "contact.location": "Ubicación"
+}

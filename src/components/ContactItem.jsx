@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
-const ContactItem = ({ icon, image, text }) => {
+const ContactItem = ({ icon, image, idTitle ,title }) => {
     return (
         <div className="ContactItem">
             <div className="contact">
@@ -9,10 +10,13 @@ const ContactItem = ({ icon, image, text }) => {
                 </div>
                 <div className="info-contact">
                     <h4>
-                        {text}
+                        <FormattedMessage
+                            id={idTitle}
+                            defaultMessage={title}
+                        />
                     </h4>
                     <div className="image-contact">
-                        <img src={image} alt={text} />
+                        <img src={image} alt={title} />
                     </div>
                 </div>
             </div>

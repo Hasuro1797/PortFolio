@@ -22,10 +22,18 @@
                 font-size: 2rem;
                 color: white;
             }
-            h1{
-                color: #037FFF;
-                text-shadow: .09em .1em black;
-                font-size: 2.5rem;
+            .hero-name{
+                display: flex;
+                .name{
+                    color: #037FFF;
+                    text-shadow: .09em .1em black;
+                    font-size: 2.5rem;
+                    margin-right: .5rem;
+                }
+                @media screen and (max-width:750px){
+                    flex-direction: column;
+                    align-items: center;
+                }
             }
             .hero-skills{
                 span{
@@ -86,6 +94,18 @@
                     transform: scale(1.05);
                     transition: .2s ease all;
                 }
+                @media screen and (max-width:750px){
+                    margin-top: 1rem;
+                    width: 50%;
+                }
+                @media screen and (max-width:415px){
+                    width: 70%;
+                }
+            }
+            @media screen and (max-width:750px){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
         }
     }

@@ -9,6 +9,9 @@
         border-bottom: 1px solid #2e344e; 
         border-top: 8px solid #2e344e;
         transition: all .4s ease-in-out;
+        @media screen and (max-width:1400px){
+            margin-bottom: 1rem;
+        }
         &:hover{
             border-top: 8px solid #037FFF;
         } 
@@ -40,6 +43,9 @@
                 font-size: 3rem;
                 color: #037FFF;
             }
+        }
+        @media screen and (max-width:1100px){
+            margin-bottom: 2rem;
         }
         
     }

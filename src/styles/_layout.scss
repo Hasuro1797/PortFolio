@@ -3,8 +3,24 @@
         width: 17%;
         height: 100vh;
         position: fixed;
+        z-index: 11;
         background-color: #191D2B;
         border-right: 1px solid #2e344e;
+        transform-origin: left;
+        @media screen and (max-width:900px){
+            transition: all 0.5s ease-in-out;
+            transform: translateX(-100%);
+            width: 30%;
+        }
+        @media screen and (max-width:415px){
+            width: 50%;
+        }
+    }
+    .nav-toogle{
+        @media screen and (max-width:900px){
+            transition: all 0.5s ease-in-out;
+            transform: translateX(0);
+        }
     }
     .main-content{
         width: 83%;
@@ -15,7 +31,53 @@
         display: grid;
         .content{
             margin: 4rem 8rem ;
+            @media screen and (max-width:1300px){
+                margin: 4rem 4rem;
+            }
+            @media screen and (max-width:400px){
+                margin: 4rem 3rem;
+            }
+        }
+        @media screen and (max-width:900px){
+            margin-left: 0;
+            width: 100%;
         }
     }
     
+}
+.nav-btn{
+    position: absolute;
+    z-index: 10;
+    right: 5%;
+    top: 5%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    .lines-1,.lines-2,.lines-3{
+        height: .2rem;
+        width: 100%;
+        background-color: white;
+        pointer-events: none;
+        border-radius: 2px;
+        &:not(:last-child){
+            margin-bottom: .3rem;
+        }
+    }
+    @media screen and (max-width:900px){
+        display: block;
+    }
+}
+@media screen and (max-width:500px){
+    html{
+        font-size: 80%;
+    }
+}
+@media screen and (max-width:415px){
+    html{
+        font-size: 60%;
+    }
 }

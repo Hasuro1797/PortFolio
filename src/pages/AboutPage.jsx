@@ -9,9 +9,9 @@ import { ImDatabase } from 'react-icons/im';
 const AboutPage = () => {
     return (
         <div className="AboutPage">
-            <Title title={"About Me"} span={"About Me"}/>
+            <Title id={"title.about"} text={"About Me"}/>
             <ImageSection/>
-            <Title title={"Skills"} span={"Skills"}/>
+            <Title id={"title.skills"} text={"Skills"}/>
             <div className="skillContainer">
                 <SkillSection skill={"JavaScript"} progress={"90%"}/>
                 <SkillSection skill={"Python"} progress={"50%"}/>
@@ -25,22 +25,28 @@ const AboutPage = () => {
                 <SkillSection skill={"PostGreSQL"} progress={"90%"}/>
                 <SkillSection skill={"Sequelize"} progress={"90%"}/>
             </div>
-            <Title title={"Services"} span={"Services"}/>
+            <Title id={"title.services"} text={"Services"}/>
             <div className="services-container">
                 <ServiceSection 
                     Icon={<MdDesktopMac/>}
-                    title="Web Design"
-                    text="I do ui/ux design for the website with a unique aspect."
+                    idTitle="services.web.design.title"
+                    textTitle="Web Design"
+                    idDescription="services.web.design.description"
+                    textDescription="Ui / ux design for the website with a unique look."
                     />
                 <ServiceSection 
                     Icon={<MdCode/>}
-                    title="Web Developer"
-                    text="I also develop the websites. I create a high performance website."
+                    idTitle="services.web.developer.title"
+                    textTitle="Web development"
+                    idDescription="services.web.developer.description"
+                    textDescription="Full Stack development with good performance and functionality."
                     />
                 <ServiceSection 
                     Icon={<ImDatabase/>}
-                    title="Data Base"
-                    text="I work with the back-end and database part efficiently."
+                    idTitle="services.database.title"
+                    textTitle="Data Base"
+                    idDescription="services.database.description"
+                    textDescription="Development with the back-end part and the database efficiently."
                     />
             </div>
         </div>

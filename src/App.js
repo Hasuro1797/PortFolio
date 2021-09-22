@@ -7,12 +7,22 @@ import ErrorPage from "./pages/ErrorPage";
 import HomePage from "./pages/HomePage";
 import ProjectPage from "./pages/ProjectPage";
 import './App.scss';
+import { useState } from "react";
 
 function App() {
+  const [showMenu, setShowMenu] = useState(false);
   return (
     <div className="App">
-      <div className="sidebar">
+      <div className={`sidebar ${showMenu ? "nav-toogle": "" }`}>
         <Navigator/>
+      </div>
+      <div 
+        className="nav-btn"
+        onClick={ () => setShowMenu(!showMenu)}
+        >
+        <div className="lines-1"></div>
+        <div className="lines-2"></div>
+        <div className="lines-3"></div>
       </div>
       <div className="main-content">
         <Switch>

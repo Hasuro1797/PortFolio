@@ -7,19 +7,16 @@
     .skill-bar{
         display: flex;
         align-items: center;
-        .skill-text{
-            font-size: 1.3rem;
-        }
         .skill-progress{
             width: 100%;
             .progress{
+                width: 100%;
                 width: 20rem;
                 height: .5rem;
                 margin-left: 1rem;
                 background-color: #0381ff3F;
                 position: relative;
                 .inner-progress{
-                    content: "";
                     position: absolute;
                     background-color: #037FFF;
                     height: 100%;
@@ -28,5 +25,11 @@
                 }
             }
         }
+    }
+}
+@media screen and (max-width:900px){
+    .SkillsSection{
+        display: flex;
+        justify-content: center;
     }
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { init } from 'ityped';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FormattedMessage } from 'react-intl';
 
 const HomePage = () => {
 
@@ -18,10 +19,22 @@ const HomePage = () => {
         <div className="homePage">
             <div className="home-info">
                 <header className="hero">
-                    <h2>Hi There, I'm</h2>
-                    <h1>Manuel Benjamin Villarroel Bedregal</h1>
+                    <h2>
+                        <FormattedMessage
+                            id="Home.greeting"
+                            defaultMessage="Hi There, I'm"
+                        />
+                    </h2>
+                    <div className="hero-name">
+                        <h2 className="name">Manuel Benjamin</h2>
+                        <h2 className="name"> Villarroel Bedregal</h2>
+                    </div>
                     <h3 className="hero-skills">
-                        Developer <span ref={textRef}></span>
+                        <FormattedMessage
+                                id="Home.profession"
+                                defaultMessage="Developer "
+                            /> 
+                        <span ref={textRef}></span>
                     </h3>
                     <div className="icons">
                         <div className="icon">
