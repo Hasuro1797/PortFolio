@@ -28,7 +28,7 @@ const ImageSection = () => {
                 <p>
                     <FormattedMessage
                         id="About.introduction"
-                        description="I love video games and technology. I am currently focused on full stack web development. I am studying Computer Engineering and I would love to learn new technologies to exploit them. This year I got a Full Stack Developer Certification. I would love to share my skills with you and I hope you enjoy this visit to my profile. Welcome !!!"
+                        defaultMessage="I love video games and technology. I am currently focused on full stack web development. I am studying Computer Engineering and I would love to learn new technologies to exploit them. This year I got a Full Stack Developer Certification. I would love to share my skills with you and I hope you enjoy this visit to my profile. Welcome !!!"
                     />
                 </p>
                 <div className="button-container">
