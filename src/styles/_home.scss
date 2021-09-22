@@ -1,0 +1,92 @@
+.homePage{
+    background-image: url('../assets/images/landing.gif');
+    background-position-x: center;
+    background-position-y: center;
+    position: relative;
+    .home-info{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color:rgba($color: #000000, $alpha: 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .hero{
+            h2{
+                font-size: 1.5rem;
+                color: white;
+            }
+            h3{
+                font-size: 2rem;
+                color: white;
+            }
+            h1{
+                color: #037FFF;
+                text-shadow: .09em .1em black;
+                font-size: 2.5rem;
+            }
+            .hero-skills{
+                span{
+                    font-size: 2rem;
+                    color: #037FFF;
+                    text-shadow: .09em .1em black;
+                }
+                .ityped-cursor{
+                    animation: blink 1s infinite;
+                    color: #037FFF;
+                }
+                @keyframes blink {
+                    50%{
+                        opacity: 1;
+                    }
+                    100%{
+                        opacity: 0;
+                    }
+                }
+            }
+            .icons{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px 2px;
+                width: 25%;
+                height: 60px;
+                .icon{
+                    width: 50px;
+                    height: 50px;
+                    background-color: #037FFF;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    border: 3px solid black;
+                    cursor: pointer;
+                    .a{
+                        text-decoration: none;
+                    }
+                    .github{
+                        display: block;
+                        font-size: 27px;
+                        color: black;
+                    }
+                    .ln{
+                        display: block;
+                        font-size: 27px;
+                        color: black;
+                    }
+                    .tw{
+                        font-size: 27px;
+                        display: block;
+                        color: black;
+                    }
+                }
+                .icon:hover{
+                    transform: scale(1.05);
+                    transition: .2s ease all;
+                }
+            }
+        }
+    }
+}

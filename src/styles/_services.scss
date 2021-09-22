@@ -1,0 +1,47 @@
+.ServiceSection{
+    flex: .3;
+    .service{
+        width: 100%;
+        border-radius: 10px;
+        background-color: #191D2B;
+        border-left: 1px solid #2e344e; 
+        border-right: 1px solid #2e344e; 
+        border-bottom: 1px solid #2e344e; 
+        border-top: 8px solid #2e344e;
+        transition: all .4s ease-in-out;
+        &:hover{
+            border-top: 8px solid #037FFF;
+        } 
+        .service-content{
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .s-title{
+                font-size: 1.6rem;
+                font-weight: 500;
+                position: relative;
+                padding-bottom: 1rem;
+                margin: .5rem 0 ;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #2e344e;
+                }
+
+            }
+            .icon-service{
+                font-size: 3rem;
+                color: #037FFF;
+            }
+        }
+        
+    }
+}
+

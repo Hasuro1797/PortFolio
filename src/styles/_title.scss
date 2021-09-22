@@ -1,0 +1,21 @@
+.Title{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        background-color: #037FFF;
+        width: 6rem;
+        height: .4rem;
+    }
+    span{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        font-size: 5rem;
+        opacity: 0.07;
+    }
+}
