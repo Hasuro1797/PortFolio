@@ -2,9 +2,13 @@ import React, { useEffect, useRef } from 'react';
 import about from '../assets/images/imgProfile.JPG';
 import { init } from 'ityped';
 import { FormattedMessage } from 'react-intl';
+import { langContext } from '../helpers/Provider';
+import { useContext } from 'react';
 
 const ImageSection = () => {
     const textRef = useRef();
+    const { locale } = useContext(langContext);
+    console.log(locale);
     useEffect(() => {
         init(textRef.current, { 
             showCursor: true,
@@ -32,12 +36,18 @@ const ImageSection = () => {
                     />
                 </p>
                 <div className="button-container">
-                    <a href="https://drive.google.com/uc?export=download&id=1YUN-gkadQ5p3UVdrz-3Pdfisosvge-KA" download="CV-profesional">
-                        <button className="btn">DownLoad CV</button>
-                    </a>
-                    {/* <a href="https://drive.google.com/uc?export=download&id=1MCRtQEEZCuhaezj8ixbScS8bDViV4VWN" download="CV-profesional">
-                        <button className="btn">Descargar CV</button>
-                    </a> */}
+                    {
+                        locale === 'es-MX' ? 
+                        <a href="https://drive.google.com/uc?export=download&id=1MCRtQEEZCuhaezj8ixbScS8bDViV4VWN" download="CV-profesional">
+                            <button className="btn">Descargar CV</button>
+                        </a>
+                        :
+                        <a href="https://drive.google.com/uc?export=download&id=1YUN-gkadQ5p3UVdrz-3Pdfisosvge-KA" download="CV-profesional">
+                            <button className="btn">DownLoad CV</button>
+                        </a>
+                    }
+                    
+                    
                 </div>
             </div>
         </div>

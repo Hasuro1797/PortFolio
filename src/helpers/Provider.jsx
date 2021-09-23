@@ -24,29 +24,29 @@ const LangProvider = ({children}) => {
 	}
 
 	const [messages, setMessages] = useState(messageDefault);
-	const [locale, establecerLocale] = useState(localeDefault);
+	const [locale, setLocale] = useState(localeDefault);
 
 	const setLanguage = (language) => {
 		switch (language){
 			case 'es-MX':
 				setMessages(EsMessages);
-				establecerLocale('es-MX');
+				setLocale('es-MX');
 				localStorage.setItem('lang', 'es-MX');
 				break;
 			case 'en-US':
 				setMessages(EnMessages);
-				establecerLocale('en-US');
+				setLocale('en-US');
 				localStorage.setItem('lang', 'en-US');
 				break;
 			default:
 				setMessages(EnMessages);
-				establecerLocale('en-US');
+				setLocale('en-US');
 				localStorage.setItem('lang', 'en-US');
 		}
 	}
 
 	return (
-		<langContext.Provider value={{setLanguage: setLanguage}}>
+		<langContext.Provider value={{setLanguage: setLanguage, locale: lang}}>
 			<IntlProvider locale={locale} messages={messages}>
 				{children}
 			</IntlProvider>
