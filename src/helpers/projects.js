@@ -40,7 +40,7 @@ export const projects = [
 	{
 		id: 4,
 		category: "Front End",
-		linkG: "https://github.com",
+		linkG: "https://github.com/Hasuro1797/searchActor",
 		linkY: "https://youtu.be/QNsEWnLUlgw",
 		iconG: <FaGithub />,
 		iconY: <FaYoutube />,
