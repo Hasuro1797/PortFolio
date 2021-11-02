@@ -45,7 +45,7 @@ export const projects = [
 		iconG: <FaGithub />,
 		iconY: <FaYoutube />,
 		image: project4,
-		title: "coming soon",
+		title: "Search Actors",
 	},
 	{
 		id: 5,
