@@ -4,6 +4,8 @@ import project2 from "../assets/images/landing-consultace.png";
 import construcion from "../assets/images/construcion.jpg";
 import project3 from "../assets/images/CRUDHome.JPG";
 import project4 from "../assets/images/CapturaActor.JPG";
+import project5 from "../assets/images/home-pokemon.JPG";
+import project6 from "../assets/images/taskApp.JPG";
 
 export const projects = [
 	{
@@ -35,7 +37,7 @@ export const projects = [
 		iconG: <FaGithub />,
 		iconY: <FaYoutube />,
 		image: project3,
-		title: "CRUD Feeds",
+		title: "Feeds",
 	},
 	{
 		id: 4,
@@ -50,21 +52,21 @@ export const projects = [
 	{
 		id: 5,
 		category: "Front End",
-		linkG: "https://github.com",
-		linkY: "https://youtube.com",
+		linkG: "https://github.com/Hasuro1797/PokeApp",
+		linkY: "https://youtu.be/xmg20R5sUD4",
 		iconG: <FaGithub />,
 		iconY: <FaYoutube />,
-		image: construcion,
-		title: "coming soon",
+		image: project5,
+		title: "Search your Pokemon",
 	},
 	{
 		id: 6,
-		category: "Back End",
-		linkG: "https://github.com",
-		linkY: "https://youtube.com",
+		category: "Full Stack",
+		linkG: "https://github.com/Hasuro1797/TodoList",
+		linkY: "https://youtu.be/ASpF3W5sez0",
 		iconG: <FaGithub />,
 		iconY: <FaYoutube />,
-		image: construcion,
-		title: "coming soon",
+		image: project6,
+		title: "Task App",
 	},
 ];
