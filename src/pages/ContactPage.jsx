@@ -36,7 +36,7 @@ const ContactPage = () => {
 						text={
 							"Upis Paisajista 0-9, Jacobo Hunter, Arequipa, Arequipa, Perú"
 						}
-						idTitle
+						idTitle="contact.location"
 						title="Location"
 					/>
 				</div>

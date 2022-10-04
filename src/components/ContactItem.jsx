@@ -11,7 +11,6 @@ const ContactItem = ({ icon, text, idTitle, title }) => {
 						<FormattedMessage id={idTitle} defaultMessage={title} />
 					</h4>
 					<div className="image-contact">
-						{/* <img src={image} alt={title} /> */}
 						<p className="text-description">{text}</p>
 					</div>
 				</div>
