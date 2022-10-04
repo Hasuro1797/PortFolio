@@ -1,7 +1,7 @@
 import { FaGithub, FaYoutube } from "react-icons/fa";
 import project1 from "../assets/images/landing-images.JPG";
 import project2 from "../assets/images/landing-consultace.png";
-import construcion from "../assets/images/construcion.jpg";
+// import construcion from "../assets/images/construcion.jpg";
 import project3 from "../assets/images/CRUDHome.JPG";
 import project4 from "../assets/images/CapturaActor.JPG";
 import project5 from "../assets/images/home-pokemon.JPG";
